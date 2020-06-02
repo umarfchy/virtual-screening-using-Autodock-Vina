@@ -12,10 +12,10 @@
 ```openbabel.obminimize -ff MMFF94 -n 2000 -sd -c 1e-7 -o sdf fda_short.sdf > fda_min.sdf```
 
 
-##### Step 3: Split the minimized file to a pdbqt directory as follows
+##### Step 3: Split the minimized file to a pdbqt directory as follows. Remember to add -m to perform splitting.
 
 
-``` openbabel.obabel -i sdf -o pdb -O ligand_.pdbqt fda_min.sdf ```
+``` openbabel.obabel -i sdf -o pdbqt -m -O ligand_.pdbqt fda_min.sdf ```
 
 
 # Protein preparation:
@@ -32,7 +32,7 @@
 
 # Docking in Autodock vina
 
-### use the script 'vina_screen_local.sh' for docking. 
+### Use the script 'vina_screen_local.sh' for docking. 
 
 ``` #! /bin/bash
 
