@@ -46,4 +46,4 @@ done
 
 # For checking grid box in pymol use Box() with capital B. It take 6 arguments as follows:-
 
-` Box(center x, center y, center z, box_distance_from_X, box_distance_from_Y, box_distance_from_Z)
+``` Box(center x, center y, center z, box_distance_from_X, box_distance_from_Y, box_distance_from_Z) ```
